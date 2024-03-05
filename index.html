@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            background-color: red;
+            padding: 40px;
+        }
+        #middle{
+            background-color: rgb(9, 255, 0);
+            padding: 40px;
+        }
+        #last{
+            background-color: rgb(24, 22, 22);
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <script src="constructor.js"></script> -->
+    <!-- <script src="Classes.js"></script> -->
+    <!-- <script src="laxical.js"></script> -->
+    <!-- <script src="promisess.js"></script> -->
+    <!-- <script src="async.js"></script> -->
+    <!-- <script src="promisesApi.js"></script> -->
+    <!-- <script src="callBackHell.js"></script> -->
+    <!-- <script src="callApplyBind.js"></script> -->
+    <!-- <script src="eventDeligation.js"></script> -->
+    <!-- <script src="memoize.js"></script> -->
+    <script src='./Logicaljs.js'></script>
+   <!-- <div>
+    <ul id="ul">
+        <li >1</li>
+        <script defer src="asyncVsDefer.js"></script>
+        <li>3</li>
+        <li>4</li>
+           
+    </ul>
+   </div> -->
+<!-- /////////////////////////////// Event bubling capaturing eventDeligation////////// -->
+    <div>
+        <div id="outer"  >
+            outer
+        <div id="middle" >
+            middle
+            <div id="last" >
+                last
+            </div>
+        </div>
+       
+        </div>
+        <!-- .......eventdeligation......//////// -->
+        <ul id="ul_deligation">
+            <li style="height: 30px;width: 30px;"><button id="btn1">Child1</button></li>
+            <li style="height: 30px;width: 30px;"><button id="btn2">Child2</button></li>
+            <li style="height: 30px;width: 30px;"><button id="btn3">Child3</button></li>
+            <li style="height: 30px;width: 30px;"><button id="btn1">Child4</button></li>
+        </ul>
+    </div>
+<!-- <script>
+    document.getElementById("ul_deligation").addEventListener("click",(e)=>{
+        if(event.target.id){
+            document.getElementById(event.target.id).style.backgroundColor="red";
+        }
+        })
+</script> -->
+    <!-- <script >
+        document.getElementById("outer").addEventListener("click",function(){alert("outer")},true)
+        document.getElementById("middle").addEventListener("click",()=>alert("middle"),true)
+        document.getElementById("last").addEventListener("click",()=>alert("last"),true)
+        </script> -->
+</body>
+</html>
