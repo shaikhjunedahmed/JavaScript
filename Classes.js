@@ -141,4 +141,4 @@ Students.prototype.about=function (){
 const student1=new Students("juned",20,1)
 // console.log(student1)
 student1.about()
-console.log("2")
+// console.log("2")
